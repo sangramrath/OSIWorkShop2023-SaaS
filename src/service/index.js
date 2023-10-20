@@ -3,15 +3,15 @@ import { createClient } from "graphql-ws";
 const DEV = true;
 
 export const CONFIG = !DEV ? {
-    url: 'http://localhost:5000',
-    appName: 'osi-event-hotels',
-    clientId: 'osi-event-hotels:default',
-    clientSecret: 'thhfwzacjwgbitlbil1qwufwluvnxv5bx8tqgzyuqfix'
+    url: process.env.REACT_APP_SQUIDEX_URL,
+    appName: process.env.REACT_APP_SQUIDEX_APPNAME,
+    clientId: process.env.REACT_APP_SQUIDEX_CLIENTID,
+    clientSecret: process.env.REACT_APP_SQUIDEX_CLIENTSECRET
 } : {
-    url: 'http://localhost:5000',
-    appName: 'osi-event-hotels',
-    clientId: 'osi-event-hotels:default',
-    clientSecret: 'thhfwzacjwgbitlbil1qwufwluvnxv5bx8tqgzyuqfix'
+    url: process.env.REACT_APP_SQUIDEX_URL,
+    appName: process.env.REACT_APP_SQUIDEX_APPNAME,
+    clientId: process.env.REACT_APP_SQUIDEX_CLIENTID,
+    clientSecret: process.env.REACT_APP_SQUIDEX_CLIENTSECRET
 };
 
 function getBearerToken() {
