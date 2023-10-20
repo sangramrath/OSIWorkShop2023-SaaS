@@ -1,3 +1,7 @@
+# React Hotel Sample for Workshop
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sangramrath/OSIWorkShop2023-FE)
+
 # React/Javascript Blog Sample
 
 You can create an app with prepulated schemas directly in Squidex.
