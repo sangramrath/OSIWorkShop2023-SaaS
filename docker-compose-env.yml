@@ -1,0 +1,18 @@
+version: "3.5"
+
+services:
+  app:
+    container_name: squidex-dev
+    image: squidex-dev
+    environment:
+    - REACT_APP_SQUIDEX_URL=${SQUIDEX_URL}
+    - SQUIDEX_APPNAME=${SQUIDEX_APPNAME}
+    - SQUIDEX_CLIENTID=${SQUIDEX_CLIENTID}
+    - SQUIDEX_CLIENTSECRET=${SQUIDEX_CLIENTSECRET}
+    build:
+      context: .
+      #target: DEV
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 3000:3000

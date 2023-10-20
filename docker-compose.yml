@@ -1,0 +1,13 @@
+version: "3.5"
+
+services:
+  app:
+    container_name: squidex-dev
+    image: squidex-dev
+    build:
+      context: .
+      #target: DEV
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 3000:3000
